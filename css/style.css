@@ -1,0 +1,43 @@
+.slider h3,
+.slider h5 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.brand-logo {
+  max-width: 150px;
+}
+
+.parallax-container {
+  height: 20%;
+}
+
+.parallax img {
+  filter: grayscale(1);
+  opacity: 0.5 !important;
+}
+
+.profile img {
+  max-width: 200px;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.8));
+}
+
+.container.profile h3 {
+  margin-bottom: 4px;
+}
+
+.container.profile p {
+  margin-top: 0px;
+}
+
+.col h5 {
+  margin-bottom: 4px;
+}
+
+.col p {
+  margin-top: 0px;
+}
+
+section,
+footer {
+  padding: 20px 0;
+}
