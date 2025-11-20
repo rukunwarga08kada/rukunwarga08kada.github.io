@@ -261,7 +261,7 @@
       <li>
         <img src="img/berita/berita-2.jpg" alt="Posyandu RW 08">
         <div class="caption left-align">
-          <p class="center white-text text-lighten-3" style="margin-top: 200px;">Pusteling dan storytelling</p>
+          <p class="center white-text text-lighten-3" style="margin-top: 200px;">Rapat Bulanan LMK Kelurahan Kelapa Dua</p>
         </div>
       </li>
       <li>
@@ -287,9 +287,9 @@
             <span class="card-title">Pojok Berita</span>
             <ul class="collection">
               <li class="collection-item"><a href="https://mediakelapadua.web.id">Sri Wahyuni Raih Juara 3 di Jambore Kader Posyandu Tingkat DKI Jakarta</a></li>
-              <li class="collection-item"><a href="https://mediakelapadua.web.id">Posyandu RW 08 hadirkan Pusteling dan Storytelling</a></li>
+              <li class="collection-item"><a href="https://mediakelapadua.web.id">Rapat bulanan LMK Kelurahan Kelapa Dua</a></li>
               <li class="collection-item"><a href="https://mediakelapadua.web.id">Perapihan lantai aula sekretariat RW 08, sumber dana berasal dari warga</a></li>
-              <li class="collection-item"><a href="https://mediakelapadua.web.id">Rapat bulanan pengurus RW 08, Pembahasan Bank Sampah</a></li>
+              <li class="collection-item"><a href="http://127.0.0.1:5500/notulen.html">Notulen Rapat Koordinasi bulanan pengurus RW 08</a></li>
             </ul>
           </div>
         </div>
@@ -437,6 +437,27 @@
     });
   });
 </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.forms["rw08-contact-form"];
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // Mencegah reload halaman
+
+      // Tampilkan toast notifikasi
+      M.toast({
+        html: 'Pesan berhasil dikirim!',
+        classes: 'green darken-2 white-text'
+      });
+
+      // Hapus semua isian form
+      form.reset();
+    });
+  });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 
     </body>
