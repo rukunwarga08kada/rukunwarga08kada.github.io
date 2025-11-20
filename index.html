@@ -26,7 +26,7 @@
               <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul class="right hide-on-med-and-down">
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#struktur">Struktur Organisasi</a></li>
+                <li><a href="#struktur">Struktur</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact Us</a></li>
@@ -39,7 +39,7 @@
       <!-- Sidenav -->
        <ul class="sidenav" id="mobile-nav">
         <li><a href="">About Us</a></li>
-        <li><a href="">Struktur Organisasi</a></li>
+        <li><a href="">Struktur</a></li>
         <li><a href="">Services</a></li>
         <li><a href="">Gallery</a></li>
         <li><a href="">Contact Us</a></li>
@@ -239,6 +239,64 @@
   </div>
 </section>
 
+
+<!-- Berita RW 08 -->
+<section id="news" class="news scrollspy">
+  <div class="container">
+    <div class="row">
+      <h3 class="center light grey-text text-darken-3">Berita RW-08</h3>
+
+<!-- Kolom Kiri: Slider Gambar Berita -->
+<div class="col m5 s12">
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/berita/berita-1.jpg" alt="Kegiatan RW 08">
+        <div class="caption left-align">
+          <p class="center white-text text-lighten-3" style="margin-top: 200px;">Juara 3 Jambore Kader Posyandu</p>
+        </div>
+      </li>
+      <li>
+        <img src="img/berita/berita-2.jpg" alt="Posyandu RW 08">
+        <div class="caption left-align">
+          <p class="center white-text text-lighten-3" style="margin-top: 200px;">Pusteling dan storytelling</p>
+        </div>
+      </li>
+      <li>
+        <img src="img/berita/berita-3.jpg" alt="Maulid Nabi">
+        <div class="caption left-align">
+          <p class="center white-text text-lighten-3" style="margin-top: 200px;">Peringatan Maulid Nabi</p>
+        </div>
+      </li>
+      <li>
+        <img src="img/berita/berita-4.jpg" alt="Maulid Nabi">
+        <div class="caption left-align">
+          <p class="center white-text text-lighten-3" style="margin-top: 200px;">Rapat Bulanan Pengurus RW 08</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+      <!-- Kolom Kanan: Daftar Berita -->
+      <div class="col m7 s12">
+        <div class="card sticky">
+          <div class="card-content">
+            <span class="card-title">Pojok Berita</span>
+            <ul class="collection">
+              <li class="collection-item"><a href="https://mediakelapadua.web.id">Sri Wahyuni Raih Juara 3 di Jambore Kader Posyandu Tingkat DKI Jakarta</a></li>
+              <li class="collection-item"><a href="https://mediakelapadua.web.id">Posyandu RW 08 hadirkan Pusteling dan Storytelling</a></li>
+              <li class="collection-item"><a href="https://mediakelapadua.web.id">Peringatan Maulid Nabi dan 100 Hari Wafatnya KH Bunyamin</a></li>
+              <li class="collection-item"><a href="https://mediakelapadua.web.id">Rapat bulanan pengurus RW 08, Pembahasan Bank Sampah</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
      <!-- Gallery -->
       <section id="gallery" class="gallery" scrollspy>
          <div class="container">
@@ -363,6 +421,19 @@
       .catch(error => console.error('Error!', error.message))
   })
 </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var sliders = document.querySelectorAll('.slider');
+    M.Slider.init(sliders, {
+      indicators: true,
+      height: 300,
+      duration: 500,
+      interval: 4000
+    });
+  });
+</script>
+
 
     </body>
   </html>
