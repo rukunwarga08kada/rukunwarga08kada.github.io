@@ -1,8 +1,11 @@
+/* Slider */
 .slider h3,
 .slider h5 {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+
+/* Logo Navbar */
 .brand-logo {
   max-width: 150px;
 }
@@ -16,6 +19,8 @@
   opacity: 0.5 !important;
 }
 
+
+/* Profile */
 .profile img {
   max-width: 200px;
   filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.8));
@@ -50,4 +55,19 @@ footer {
 .card-panel {
   min-height: 250px;
 }
+
+/* Slider Berita */
+.slidernews {
+  max-width: 50px;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.8));
+}
+
+/* Col Email Contact */
+.custom-panel {
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+}
+
+
+
 
