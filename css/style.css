@@ -68,6 +68,18 @@ footer {
   padding-bottom: 10px;
 }
 
+.gallery img {
+  margin-bottom: 15px; /* jarak vertikal antar gambar */
+}
+
+@media only screen and (max-width: 600px) {
+  .gallery img {
+    margin-bottom: 20px; /* lebih besar di layar kecil */
+  }
+}
+
+
+
 
 
 
