@@ -86,15 +86,7 @@ footer {
   text-decoration: none;
 }
 
-.box-panel {
-  margin-top: 20px;   /* jarak atas */
-  margin-bottom: 20px;/* jarak bawah */
-  padding: 20px;      /* isi dalam */
-}
 
-.box-panel {
-  min-height: 250px;
-}
 
 
 
