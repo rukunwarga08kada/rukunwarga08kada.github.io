@@ -78,24 +78,10 @@ footer {
   }
 }
 
-/* Footer */
 .channel-link {
   display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  text-decoration: none;
+  align-items: center;   /* sejajarkan vertikal */
+  gap: 8px;              /* beri jarak antar elemen */
+  text-decoration: none; /* hilangkan underline */
+  color: inherit;        /* ikuti warna parent */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
