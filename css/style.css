@@ -62,6 +62,18 @@ footer {
   filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.8));
 }
 
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.add-cart-btn {
+  margin-top: auto; /* dorong ke bawah */
+  align-self: flex-start; /* opsional: posisikan kiri */
+}
+
+
 /* Col Email Contact */
 .custom-panel {
   margin-bottom: 12px;
