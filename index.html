@@ -412,8 +412,10 @@
           <div class="col m3 s12 hidden">
             <img src="img/gallery/h.jpg" class="responsive-img materialboxed z-depth-3" />
           </div>
-          
-          <button id="show-more-btn"><span class="btn-text" >Tampilan Selengkapnya </span><i data-feather="arrow-right-circle" style="stroke-width: 1; margin-left: 2px;"></i>
+
+          <!-- Tombol Gallery-->
+          <div class="col m3 s12">
+          <button id="show-more-btn"><span class="btn-text" >Selengkapnya </span><i data-feather="arrow-right-circle" style="stroke-width: 1; margin-left: 2px;"></i>
         </button>
           </div>
         </div>
@@ -571,7 +573,7 @@
     isVisible = !isVisible;
 
     // Ubah teks tombol
-    btn.querySelector(".btn-text").textContent = isVisible ? "Tutup" : "Tampilan Selengkapnya";
+    btn.querySelector(".btn-text").textContent = isVisible ? "Tutup" : "Selengkapnya";
   });
 </script>
 
