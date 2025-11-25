@@ -86,3 +86,23 @@ footer {
   color: inherit;        /* ikuti warna parent */
 }
 
+
+/* Gallery */
+.hidden {
+  display: none;
+}
+
+#show-more-btn {
+  color: white;
+  background-color: #2ba331; /* hijau darken-3 */
+}
+#show-more-btn:hover {
+  color: white;
+  background-color: #30b837; /* lebih gelap saat hover */
+}
+
+#show-more-btn {
+  border: none;        /* hilangkan garis bingkai */
+  box-shadow: none;    /* hilangkan bayangan */
+}
+

@@ -400,17 +400,21 @@
           </div>
 
         <div class="row">
-          <div class="col m3 s12">
+          <div class="col m3 s12 hidden">
             <img src="img/gallery/e.jpg" class="responsive-img materialboxed z-depth-3" />
           </div>
-          <div class="col m3 s12">
+          <div class="col m3 s12 hidden">
             <img src="img/gallery/f.jpg" class="responsive-img materialboxed z-depth-3" />
           </div>
-          <div class="col m3 s12">
+          <div class="col m3 s12 hidden">
             <img src="img/gallery/g.jpg" class="responsive-img materialboxed z-depth-3" />
           </div>
-          <div class="col m3 s12">
+          <div class="col m3 s12 hidden">
             <img src="img/gallery/h.jpg" class="responsive-img materialboxed z-depth-3" />
+          </div>
+          
+          <button id="show-more-btn"><span class="btn-text" >Tampilan Selengkapnya </span><i data-feather="arrow-right-circle" style="stroke-width: 1; margin-left: 2px;"></i>
+        </button>
           </div>
         </div>
       </div>
@@ -553,6 +557,24 @@
         });
       });
     </script>
+
+    <!-- Gallery -->
+     <script>
+  const btn = document.getElementById("show-more-btn");
+  const hiddenItems = document.querySelectorAll(".hidden");
+  let isVisible = false;
+
+  btn.addEventListener("click", () => {
+    hiddenItems.forEach(item => {
+      item.style.display = isVisible ? "none" : "block";
+    });
+    isVisible = !isVisible;
+
+    // Ubah teks tombol
+    btn.querySelector(".btn-text").textContent = isVisible ? "Tutup" : "Tampilan Selengkapnya";
+  });
+</script>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
