@@ -80,6 +80,12 @@ footer {
   padding-bottom: 10px;
 }
 
+/* Gallery */
+.hidden {
+  display: none; /* Semua elemen dengan class hidden tidak muncul */
+}
+
+
 .gallery img {
   margin-bottom: 15px; /* jarak vertikal antar gambar */
 }

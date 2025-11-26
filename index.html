@@ -694,18 +694,22 @@
 
     <!-- Gallery -->
      <script>
-  const btn = document.getElementById("show-more-btn");
-  const hiddenItems = document.querySelectorAll(".hidden");
-  let isVisible = false;
+  document.addEventListener("DOMContentLoaded", function() {
+    const btn = document.getElementById("show-more-btn");
+    const hiddenItems = document.querySelectorAll(".gallery .hidden");
+    let isOpen = false;
 
-  btn.addEventListener("click", () => {
-    hiddenItems.forEach(item => {
-      item.style.display = isVisible ? "none" : "block";
+    btn.addEventListener("click", function() {
+      if (!isOpen) {
+        hiddenItems.forEach(item => item.style.display = "block");
+        btn.innerHTML = '<i class="material-icons left"></i>Close';
+        isOpen = true;
+      } else {
+        hiddenItems.forEach(item => item.style.display = "none");
+        btn.innerHTML = '<i class="material-icons left"></i>Open';
+        isOpen = false;
+      }
     });
-    isVisible = !isVisible;
-
-    // Ubah teks tombol langsung
-    btn.textContent = isVisible ? "Close" : "Open";
   });
 </script>
 
