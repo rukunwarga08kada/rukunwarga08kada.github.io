@@ -98,7 +98,7 @@
     <!-- About Us-->
     <section id="about" class="about scrollspy">
       <div class="container">
-        <div class="row" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="row" data-aos="zoom-in" data-aos-duration="500">
           <h3 class="center light grey-text text-darken-3">About Us</h3>
           <div class="col m6 light">
             <h5>Profile RW 08</h5>
@@ -462,7 +462,7 @@
           <!-- Tombol Gallery-->
            <div class="col m s12">
           <a id="show-more-btn" class="waves-effect waves-light btn-small green">
-          <i class="material-icons left"></i>continue</a>
+          <i class="material-icons left"></i>Open</a>
            </div>
         </div>
         </div>
@@ -617,10 +617,11 @@
     });
     isVisible = !isVisible;
 
-    // Ubah teks tombol
-    btn.querySelector(".btn-text").textContent = isVisible ? "Tutup" : "Selengkapnya";
+    // Ubah teks tombol langsung
+    btn.textContent = isVisible ? "Close" : "Open";
   });
 </script>
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
