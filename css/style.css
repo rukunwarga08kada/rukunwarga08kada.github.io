@@ -104,30 +104,34 @@ footer {
   text-align: justify;
 }
 
-/* Default: modal di tengah layar (desktop/tablet) */
+/* Default desktop/tablet: tetap center */
 .modal {
   position: fixed !important;
   top: 50% !important;
   left: 50% !important;
   transform: translate(-50%, -50%) !important;
-  width: 70%;          /* sesuaikan lebar di desktop */
-  max-height: 80%;     /* biar tidak terlalu panjang */
-  overflow-y: auto;    /* scroll jika konten panjang */
+  width: 70%;
+  max-height: 80%;
+  overflow-y: auto;
 }
 
-/* Mobile: fullscreen */
+/* Mobile fullscreen dengan animasi slide */
 @media only screen and (max-width: 600px) {
   .modal {
-    top: 0 !important;
+    top: 100% !important;              /* mulai dari bawah layar */
     left: 0 !important;
     transform: none !important;
     width: 100% !important;
     height: 100% !important;
     max-height: 100% !important;
-    border-radius: 0;   /* hilangkan sudut rounded */
+    border-radius: 0;
+    transition: top 0.4s ease-in-out;  /* animasi transisi */
+  }
+  .modal.open {
+    top: 0 !important;                 /* ketika dibuka, naik ke atas */
   }
   .modal-content {
-    height: calc(100% - 56px); /* sisakan ruang untuk footer */
+    height: calc(100% - 56px);
     overflow-y: auto;
   }
 }
