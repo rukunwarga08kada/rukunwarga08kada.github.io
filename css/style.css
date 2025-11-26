@@ -110,6 +110,50 @@ footer {
   text-align: justify;
 }
 
+/* Scroll To Top */
+.buttonToTop {
+  position: fixed;
+  bottom: 150px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.buttonToTop:hover {
+  transform: scale(1.1);
+}
+
+.buttonToTop a {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgb(6, 156, 6);
+  border: none;
+  color: #ffffff;
+  font-family: monospace;
+  font-weight: light;
+  cursor: pointer;
+  transition: 0.5s;
+  align-items: center;
+}
+
+.buttonToTop a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.buttonToTop a:hover {
+  background-color: var(--primary);
+  color: #000;
+  transform: rotate(360deg);
+}
 
 
 
