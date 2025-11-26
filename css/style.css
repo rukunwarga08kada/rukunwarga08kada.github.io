@@ -104,11 +104,32 @@ footer {
   text-align: justify;
 }
 
-modal {
+/* Default: modal di tengah layar (desktop/tablet) */
+.modal {
   position: fixed !important;
   top: 50% !important;
   left: 50% !important;
   transform: translate(-50%, -50%) !important;
+  width: 70%;          /* sesuaikan lebar di desktop */
+  max-height: 80%;     /* biar tidak terlalu panjang */
+  overflow-y: auto;    /* scroll jika konten panjang */
+}
+
+/* Mobile: fullscreen */
+@media only screen and (max-width: 600px) {
+  .modal {
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    border-radius: 0;   /* hilangkan sudut rounded */
+  }
+  .modal-content {
+    height: calc(100% - 56px); /* sisakan ruang untuk footer */
+    overflow-y: auto;
+  }
 }
 
 
