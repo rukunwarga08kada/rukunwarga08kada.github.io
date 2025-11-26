@@ -99,7 +99,10 @@ footer {
 }
 
 
-/* Gallery */
+/* About-text */
+.text-justify {
+  text-align: justify;
+}
 
 
 
