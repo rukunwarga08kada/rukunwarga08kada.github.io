@@ -20,6 +20,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -37,7 +38,18 @@
   </head>
   <body id="home" class="scrollspy">
     
-
+    <!-- Popup Iklan Star-->
+      <div class="popup-screen">
+        <div class="popup-box" style="background-image: url('img/berita/7.jpeg'); background-size: 100%; background-position: center; width: 687px; height: 687px;  width: 100% auto; height: 75%; color: white">
+        <i class="material-icons close-btn green small">cancel</i>
+        <img src="logo/Logo RW 08.png" style="position: fixed" class="white" loading="lazy">
+        <h2 style="color: #000;"  data-aos="fade-up" data-aos-duration="1000"></h2>
+        <audio autoplay><source src="audio/popup.mp3" type="audio/mp3" id="popup-audio"></audio>
+        </div>
+      </div>
+    </div>
+    <!-- Popup Iklan End-->
+    
     <!-- Navbar -->
     <div class="navbar-fixed">
       <nav class="green darken-3">
@@ -741,6 +753,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- PopUp -->
+<script>
+  // Tampilkan popup setelah halaman dimuat
+  window.addEventListener("load", function() {
+    document.querySelector(".popup-screen").style.display = "flex";
+  });
+
+  // Tombol close
+  document.querySelector(".close-btn").addEventListener("click", function() {
+    document.querySelector(".popup-screen").style.display = "none";
+    // Hentikan audio jika ada
+    let audio = document.getElementById("popup-audio");
+    if(audio) audio.pause();
+  });
+  // Klik di luar popup-box
+  document.querySelector(".popup-screen").addEventListener("click", function(e) {
+    // Pastikan klik terjadi di luar popup-box
+    if (e.target === this) {
+      closePopup();
+    }
+  });
+// Fungsi untuk menutup popup
+  function closePopup() {
+    document.querySelector(".popup-screen").style.display = "none";
+    // Hentikan audio jika ada
+    let audio = document.getElementById("popup-audio");
+    if (audio) audio.pause();
+  }
+</script>
+
     <script>
       AOS.init();
     </script>
