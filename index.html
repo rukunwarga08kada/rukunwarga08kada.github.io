@@ -40,10 +40,15 @@
     
     <!-- Popup Iklan Star-->
       <div class="popup-screen">
-        <div class="popup-box" style="background-image: url('img/berita/7.jpeg'); background-size: 100%; background-position: center; width: 687px; height: 687px;  width: 100% auto; height: 75%; color: white">
-        <i class="material-icons close-btn green small">cancel</i>
+        <div class="popup-box" style="background-image: url('img/berita/7.jpeg'); background-size: 100%; background-position: center; width: 687px; height: 687px;  width: 100% auto; height: 70%; color: white">
+
+        <!-- Tambahan btn-floating pulse -->
+        <a class="btn-floating pulse green">
+          <i class="material-icons">cancel</i>
+        </a>
+
         <img src="logo/Logo RW 08.png" style="position: fixed" class="white" loading="lazy">
-        <h2 style="color: #000;"  data-aos="fade-up" data-aos-duration="1000"></h2>
+        <h2 style="color: #000;"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"></h2>
         <audio autoplay><source src="audio/popup.mp3" type="audio/mp3" id="popup-audio"></audio>
         </div>
       </div>
@@ -754,7 +759,7 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-    <!-- PopUp -->
+     <!-- PopUp Star -->
 <script>
   // Tampilkan popup setelah halaman dimuat
   window.addEventListener("load", function() {
@@ -762,7 +767,7 @@
   });
 
   // Tombol close
-  document.querySelector(".close-btn").addEventListener("click", function() {
+  document.querySelector(".btn-floating ").addEventListener("click", function() {
     document.querySelector(".popup-screen").style.display = "none";
     // Hentikan audio jika ada
     let audio = document.getElementById("popup-audio");
@@ -783,6 +788,7 @@
     if (audio) audio.pause();
   }
 </script>
+      <!-- PopUp Star -->
 
     <script>
       AOS.init();

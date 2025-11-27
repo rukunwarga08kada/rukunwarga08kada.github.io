@@ -162,7 +162,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.7);
+  background: rgba(255, 254, 254, 0.5);
   display: none; /* disembunyikan */
   justify-content: center;
   align-items: center;
@@ -186,7 +186,7 @@ footer {
   transform: scala(0);
   transition: 0.5s ease;
   transition-property: transform;
-  box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.8);
+  box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.5);
   z-index: 1;
 }
 
@@ -204,31 +204,15 @@ footer {
   width: 130px; /* Atur lebar gambar */
   height: auto;
   border-radius: 50%;
-  border: 5px solid #fff;
-  box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.8);
+  box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.5);
   transition: transform 0.5s;
   margin-top: -5px;
 }
 
-.close-btn {
+.popup-box .btn-floating {
   position: absolute;
   top: 10px;
   right: 15px;
-  font-size: 24px;
-  cursor: pointer;
-  color: #fff;
-  border-radius: 50%; 
-  
-  .popup-screen {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.5); /* overlay */
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
 }
 
 @keyframes fadeIn {
