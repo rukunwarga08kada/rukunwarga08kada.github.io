@@ -239,6 +239,7 @@ footer {
 .popup-box p {
   font-size: 1.2em;
   margin-bottom: 15px;
+
 }
 
 .popup-box .btn {
@@ -340,11 +341,3 @@ footer {
     transition: 0.5s;
   }
 }
-
-@media (max-width: 600px) {
-  .popup-box {
-    max-width: 90%;
-    padding: 15px;
-  }
-}
-
