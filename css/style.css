@@ -4,7 +4,6 @@
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-
 /* Logo Navbar */
 .brand-logo {
   max-width: 150px;
@@ -18,7 +17,6 @@
   filter: grayscale(1);
   opacity: 0.5 !important;
 }
-
 
 /* Profile */
 .profile img {
@@ -68,6 +66,12 @@ footer {
   align-self: flex-start; /* opsional: posisikan kiri */
 }
 
+.card-panel {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 /* Col Email Contact */
 .custom-panel {
@@ -79,7 +83,6 @@ footer {
 .hidden {
   display: none; /* Semua elemen dengan class hidden tidak muncul */
 }
-
 
 .gallery img {
   margin-bottom: 15px; /* jarak vertikal antar gambar */
@@ -93,12 +96,11 @@ footer {
 
 .channel-link {
   display: inline-flex;
-  align-items: center;   /* sejajarkan vertikal */
-  gap: 8px;              /* beri jarak antar elemen */
+  align-items: center; /* sejajarkan vertikal */
+  gap: 8px; /* beri jarak antar elemen */
   text-decoration: none; /* hilangkan underline */
-  color: inherit;        /* ikuti warna parent */
+  color: inherit; /* ikuti warna parent */
 }
-
 
 /* About-text */
 .justify-text {
@@ -239,7 +241,6 @@ footer {
 .popup-box p {
   font-size: 1.2em;
   margin-bottom: 15px;
-
 }
 
 .popup-box .btn {
